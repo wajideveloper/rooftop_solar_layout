@@ -1,0 +1,198 @@
+{
+  "summary": {
+    "n_panels": 45,
+    "capacity_kwp": 18.0,
+    "panel_area_m2": 87.87365999999999,
+    "usable_area_m2": 164.06398797877628,
+    "weighted_yield_factor": 0.9219326241444386,
+    "faces": [
+      {
+        "face_id": 1,
+        "slope": 37.576301600839685,
+        "aspect": 42.573090258677894,
+        "area_3d": 34.93821408513861,
+        "yield_factor": 0.5057293668619758,
+        "status": "rejected: aspect (north-facing)",
+        "usable_area": 0.0,
+        "n_panels": 0
+      },
+      {
+        "face_id": 2,
+        "slope": 35.48116890481682,
+        "aspect": 42.339542392479814,
+        "area_3d": 40.70949560663598,
+        "yield_factor": 0.5311938220469141,
+        "status": "rejected: aspect (north-facing)",
+        "usable_area": 0.0,
+        "n_panels": 0
+      },
+      {
+        "face_id": 3,
+        "slope": 36.02403262607676,
+        "aspect": 132.97927388000232,
+        "area_3d": 70.36607865005979,
+        "yield_factor": 0.91421111004891,
+        "usable_area": 50.56290489115536,
+        "status": "ok",
+        "n_panels": 18,
+        "orientation": "landscape",
+        "panel_area": 35.149463999999995,
+        "fill_ratio": 0.6951630661977346
+      },
+      {
+        "face_id": 4,
+        "slope": 34.564666601242756,
+        "aspect": 308.74819988288533,
+        "area_3d": 13.855723795437127,
+        "yield_factor": 0.5724803123083895,
+        "status": "rejected: aspect (north-facing)",
+        "usable_area": 0.0,
+        "n_panels": 0
+      },
+      {
+        "face_id": 5,
+        "slope": 37.485774020355564,
+        "aspect": 43.564465250227556,
+        "area_3d": 33.244929490439226,
+        "yield_factor": 0.5102262746740022,
+        "status": "rejected: aspect (north-facing)",
+        "usable_area": 0.0,
+        "n_panels": 0
+      },
+      {
+        "face_id": 6,
+        "slope": 36.91364943524769,
+        "aspect": 222.94209242333966,
+        "area_3d": 39.835325684663985,
+        "yield_factor": 0.925440327646302,
+        "usable_area": 28.684566305055238,
+        "status": "ok",
+        "n_panels": 8,
+        "orientation": "landscape",
+        "panel_area": 15.621983999999998,
+        "fill_ratio": 0.544612870693703
+      },
+      {
+        "face_id": 7,
+        "slope": 39.197936837076085,
+        "aspect": 313.6166335527208,
+        "area_3d": 24.24618598306983,
+        "yield_factor": 0.4988271467817263,
+        "status": "rejected: aspect (north-facing)",
+        "usable_area": 0.0,
+        "n_panels": 0
+      },
+      {
+        "face_id": 8,
+        "slope": 0.6326451015641101,
+        "aspect": -1.0,
+        "area_3d": 29.571802679110814,
+        "yield_factor": 0.8739219208980007,
+        "usable_area": 1.092990564776966,
+        "status": "rejected: not enough usable area",
+        "n_panels": 0
+      },
+      {
+        "face_id": 9,
+        "slope": 35.13661851471046,
+        "aspect": 222.6053264127628,
+        "area_3d": 87.54166151931577,
+        "yield_factor": 0.9314554087819236,
+        "usable_area": 51.740017912544715,
+        "status": "ok",
+        "n_panels": 11,
+        "orientation": "landscape",
+        "panel_area": 21.480227999999997,
+        "fill_ratio": 0.41515694942950476
+      },
+      {
+        "face_id": 10,
+        "slope": 32.648342442623225,
+        "aspect": 42.65273213432857,
+        "area_3d": 25.30886321647659,
+        "yield_factor": 0.5667485687661159,
+        "status": "rejected: aspect (north-facing)",
+        "usable_area": 0.0,
+        "n_panels": 0
+      },
+      {
+        "face_id": 11,
+        "slope": 35.7936548350776,
+        "aspect": 223.53465576445916,
+        "area_3d": 15.731167764601034,
+        "yield_factor": 0.9267130978553546,
+        "usable_area": 9.650957286881171,
+        "status": "ok",
+        "n_panels": 2,
+        "orientation": "landscape",
+        "panel_area": 3.9054959999999994,
+        "fill_ratio": 0.40467446740323415
+      },
+      {
+        "face_id": 12,
+        "slope": 39.141920588119014,
+        "aspect": 313.68132432132836,
+        "area_3d": 18.244298569111674,
+        "yield_factor": 0.4992877793015103,
+        "status": "rejected: aspect (north-facing)",
+        "usable_area": 0.0,
+        "n_panels": 0
+      },
+      {
+        "face_id": 13,
+        "slope": 37.99627121785499,
+        "aspect": 315.0054531212062,
+        "area_3d": 14.021938351005444,
+        "yield_factor": 0.5088097703954851,
+        "status": "rejected: aspect (north-facing)",
+        "usable_area": 0.0,
+        "n_panels": 0
+      },
+      {
+        "face_id": 14,
+        "slope": 29.85122789706703,
+        "aspect": 222.01435693447053,
+        "area_3d": 16.868038447043133,
+        "yield_factor": 0.9430513972458763,
+        "usable_area": 9.942936401025111,
+        "status": "ok",
+        "n_panels": 2,
+        "orientation": "landscape",
+        "panel_area": 3.9054959999999994,
+        "fill_ratio": 0.3927910068495807
+      },
+      {
+        "face_id": 15,
+        "slope": 36.40142945964892,
+        "aspect": 132.27802484672333,
+        "area_3d": 20.934823950999608,
+        "yield_factor": 0.9105267494113293,
+        "usable_area": 13.482605182114696,
+        "status": "ok",
+        "n_panels": 4,
+        "orientation": "portrait",
+        "panel_area": 7.810991999999999,
+        "fill_ratio": 0.57933848054541
+      },
+      {
+        "face_id": 16,
+        "slope": 20.70557445401408,
+        "aspect": 283.5603034710834,
+        "area_3d": 13.373819896177745,
+        "yield_factor": 0.7823196350530356,
+        "usable_area": 3.213326433112795,
+        "status": "rejected: not enough usable area",
+        "n_panels": 0
+      }
+    ]
+  },
+  "validation": {
+    "n_panels": 45,
+    "overlapping_pairs": 0,
+    "panels_closer_than_clearance_to_obstruction": 0,
+    "panels_outside_face": 0,
+    "setback_violations": 0,
+    "max_3d_size_error_m": 1.2475809274548055e-09,
+    "max_out_of_plane_m": 1.1137152175920936e-14
+  }
+}

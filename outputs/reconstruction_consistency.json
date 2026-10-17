@@ -1,0 +1,255 @@
+{
+  "n_adjacent_pairs": 31,
+  "mean_border_dz": 0.09412962434516457,
+  "max_border_dz": 0.437230334597282,
+  "pairs": [
+    {
+      "faces": [
+        1,
+        3
+      ],
+      "border_px": 14,
+      "mean_abs_dz": 0.02756769060481799
+    },
+    {
+      "faces": [
+        1,
+        6
+      ],
+      "border_px": 136,
+      "mean_abs_dz": 0.11507165446541275
+    },
+    {
+      "faces": [
+        1,
+        7
+      ],
+      "border_px": 35,
+      "mean_abs_dz": 0.08320114856189248
+    },
+    {
+      "faces": [
+        1,
+        8
+      ],
+      "border_px": 96,
+      "mean_abs_dz": 0.04534312205278305
+    },
+    {
+      "faces": [
+        1,
+        11
+      ],
+      "border_px": 9,
+      "mean_abs_dz": 0.1170257331641172
+    },
+    {
+      "faces": [
+        1,
+        13
+      ],
+      "border_px": 10,
+      "mean_abs_dz": 0.004310302810786482
+    },
+    {
+      "faces": [
+        1,
+        15
+      ],
+      "border_px": 32,
+      "mean_abs_dz": 0.06261716261805139
+    },
+    {
+      "faces": [
+        2,
+        5
+      ],
+      "border_px": 10,
+      "mean_abs_dz": 0.06073055138102745
+    },
+    {
+      "faces": [
+        2,
+        9
+      ],
+      "border_px": 70,
+      "mean_abs_dz": 0.10276685973486752
+    },
+    {
+      "faces": [
+        2,
+        10
+      ],
+      "border_px": 39,
+      "mean_abs_dz": 0.015647837721657218
+    },
+    {
+      "faces": [
+        3,
+        5
+      ],
+      "border_px": 56,
+      "mean_abs_dz": 0.07499305481843953
+    },
+    {
+      "faces": [
+        3,
+        7
+      ],
+      "border_px": 145,
+      "mean_abs_dz": 0.10620195257126862
+    },
+    {
+      "faces": [
+        3,
+        9
+      ],
+      "border_px": 38,
+      "mean_abs_dz": 0.05010139366828638
+    },
+    {
+      "faces": [
+        3,
+        10
+      ],
+      "border_px": 15,
+      "mean_abs_dz": 0.044178242018624775
+    },
+    {
+      "faces": [
+        3,
+        11
+      ],
+      "border_px": 48,
+      "mean_abs_dz": 0.044641284866611265
+    },
+    {
+      "faces": [
+        4,
+        9
+      ],
+      "border_px": 14,
+      "mean_abs_dz": 0.437230334597282
+    },
+    {
+      "faces": [
+        4,
+        14
+      ],
+      "border_px": 47,
+      "mean_abs_dz": 0.1630849479156326
+    },
+    {
+      "faces": [
+        5,
+        10
+      ],
+      "border_px": 50,
+      "mean_abs_dz": 0.109296481044519
+    },
+    {
+      "faces": [
+        6,
+        11
+      ],
+      "border_px": 52,
+      "mean_abs_dz": 0.29853663248795653
+    },
+    {
+      "faces": [
+        6,
+        13
+      ],
+      "border_px": 45,
+      "mean_abs_dz": 0.05777433968258852
+    },
+    {
+      "faces": [
+        7,
+        8
+      ],
+      "border_px": 79,
+      "mean_abs_dz": 0.048046564543470914
+    },
+    {
+      "faces": [
+        7,
+        9
+      ],
+      "border_px": 40,
+      "mean_abs_dz": 0.05638664481745046
+    },
+    {
+      "faces": [
+        8,
+        9
+      ],
+      "border_px": 98,
+      "mean_abs_dz": 0.08009145009802787
+    },
+    {
+      "faces": [
+        8,
+        15
+      ],
+      "border_px": 77,
+      "mean_abs_dz": 0.0649379799229622
+    },
+    {
+      "faces": [
+        9,
+        10
+      ],
+      "border_px": 192,
+      "mean_abs_dz": 0.08496795874548672
+    },
+    {
+      "faces": [
+        9,
+        12
+      ],
+      "border_px": 37,
+      "mean_abs_dz": 0.0579708742956749
+    },
+    {
+      "faces": [
+        9,
+        15
+      ],
+      "border_px": 34,
+      "mean_abs_dz": 0.04349191933206368
+    },
+    {
+      "faces": [
+        9,
+        16
+      ],
+      "border_px": 86,
+      "mean_abs_dz": 0.07655748052393505
+    },
+    {
+      "faces": [
+        12,
+        13
+      ],
+      "border_px": 36,
+      "mean_abs_dz": 0.16212626405285097
+    },
+    {
+      "faces": [
+        12,
+        15
+      ],
+      "border_px": 133,
+      "mean_abs_dz": 0.12388734235822549
+    },
+    {
+      "faces": [
+        14,
+        16
+      ],
+      "border_px": 73,
+      "mean_abs_dz": 0.09923314922333058
+    }
+  ]
+}

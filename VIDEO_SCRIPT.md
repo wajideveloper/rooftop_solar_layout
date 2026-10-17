@@ -1,0 +1,18 @@
+# Demo video script (target 4:30, max 5:00)
+
+`python make_demo_video.py` renders `outputs/demo_video.mp4`: a silent, captioned slideshow of the pipeline
+figures (about 4 min 20 s). Record your narration over it (OBS, Clipchamp, PowerPoint "Record", or any
+screen recorder), or screen-record the live run and the 3D viewer using the timings below.
+
+| time | on screen | say |
+|---|---|---|
+| 0:00 | title | "Hi, I'm … This is my solution to the roof-reconstruction and solar-layout assessment. Input: a 10 cm photogrammetric DSM and an RGB orthoimage of one property; output: a planar 3D roof model, the rooftop obstructions and a validated panel layout. Everything is Python: numpy, scipy, rasterio, shapely, OpenCV." |
+| 0:25 | terminal: `python run_pipeline.py` | "The pipeline has eight steps. Each one can be re-run on its own and prints its key numbers. The whole thing takes under a minute." |
+| 0:40 | fig1 | "Step one, the footprint. Inside the parcel, anything over 2.5 m is the house or a tree. I separate trees by height, by surface roughness, which is near zero on a plane and large on canopy, and by a green index. The largest remaining component is the house, and its outline is snapped to the two dominant directions, giving an 8-vertex rectilinear polygon." |
+| 1:10 | fig2 | "Step two regularises the DSM: nodata and spikes are detected and interpolated, then a median and a bilateral filter remove noise while keeping ridges sharp. This dataset is clean, 2 cm of noise, but the code path is generic." |
+| 1:30 | fig3 | "Step three: elevation, slope and aspect with Horn's method. The faces are pitched at about 35 degrees and the building is rotated 43 degrees from north." |
+| 1:45 | fig4 | "Step four is the core. I estimate local plane normals, grow regions where the normal and the distance to the region plane agree, fit each region with RANSAC, merge coplanar neighbours, and then let every pixel pick the adjacent plane that explains its height best. That last step moves the borders onto the true ridge, hip and valley lines. Sixteen faces explain the DSM with 8 cm RMSE; the yellow pixels are what no plane explains." |
+| 2:30 | fig5 | "Step five, obstructions, uses three cues: height above the fitted plane, the unexplained pixels, and brightness relative to the face, because an absolute threshold confuses sunlit slate with glass. Objects are classified: dormers, the glass lantern, a roof window, the tree overhang. Each gets a 40 cm keep-out." |
+| 3:00 | fig6 + roof_3d.html | "Step six builds the 3D model. Ridges, hips and valleys are computed analytically as plane intersections; I report the height mismatch between adjacent planes along their shared edge, 9 cm on average. The mesh is exported as OBJ and PLY, and here is the interactive viewer with the measured points overlaid for verification." |
+| 3:35 | fig7 | "Step seven, the layout. Each face is unfolded into its own roof plane so setbacks and module sizes are true distances; the usable area is the face minus the 40 cm setback and the keep-outs. A grid search over row and column phases, in both orientations, maximises the number of 1.7 by 1.1 m modules. North-facing faces are rejected. Result: 45 modules, 18 kilowatt-peak. An independent validator confirms no overlaps, no setback or clearance violations, and exact 3D module size." |
+| 4:15 | fig8 / README | "Limitations: the tree-covered corner is excluded rather than reconstructed, dormers are treated as obstructions, and the yield factor is geometric, no shading simulation. The README has the setup, run steps and the full technical explanation. Thank you." |

@@ -74,29 +74,29 @@ def title_slide(lines, sub=""):
 def main():
     n = load_numbers()
     scenes = [
-        (25, title_slide(["3D Roof Reconstruction & Solar Panel Placement",
+        (18, title_slide(["3D Roof Reconstruction & Solar Panel Placement",
                           "from a 0.1 m DSM + RGB orthoimage, in Python"],
                          "numpy . scipy . rasterio . shapely . OpenCV . matplotlib . plotly")),
         (15, slide(OUT / "fig8_summary.png", "Pipeline: 8 steps, ~1 minute, python run_pipeline.py",
                    "1 footprint  2 DSM regularisation  3 slope/aspect  4 roof faces  5 obstructions  6 3D model  7 panels  8 report",
                    "overview")),
-        (30, slide(OUT / "fig1_footprint.png", "Step 1 - building footprint",
+        (26, slide(OUT / "fig1_footprint.png", "Step 1 - building footprint",
                    f"Height > 2.5 m inside the parcel; trees removed by height, surface roughness and green index; largest component; "
                    f"outline snapped to the two dominant directions -> {n['fp']:.0f} m2 rectilinear polygon.", "1 / 8")),
-        (20, slide(OUT / "fig2_preprocess.png", "Step 2 - regularise elevations, fill missing data",
+        (16, slide(OUT / "fig2_preprocess.png", "Step 2 - regularise elevations, fill missing data",
                    "Nodata and isolated spikes are interpolated (linear, nearest fallback); 3x3 median + bilateral filter removes noise "
                    "while keeping ridges and step edges sharp. This dataset: 0 gaps, 0 spikes, 2 cm noise.", "2 / 8")),
-        (15, slide(OUT / "fig3_terrain.png", "Step 3 - elevation, slope, aspect",
+        (12, slide(OUT / "fig3_terrain.png", "Step 3 - elevation, slope, aspect",
                    "Horn 3x3 gradients. Aspect = azimuth of the downslope direction. Faces are pitched ~35 deg; the building is rotated 43 deg from north.",
                    "3 / 8")),
-        (45, slide(OUT / "fig4_faces.png", "Step 4 - roof faces (region growing + RANSAC planes)",
+        (38, slide(OUT / "fig4_faces.png", "Step 4 - roof faces (region growing + RANSAC planes)",
                    f"Local plane normals -> region growing (angle + distance to plane) -> RANSAC plane per region -> merge coplanar -> "
                    f"every pixel adopts the adjacent plane that explains its height best, which moves borders onto the true ridges/hips/valleys. "
                    f"{n['faces']} faces, RMSE {n['rmse']:.3f} m; yellow = explained by no plane.", "4 / 8")),
-        (30, slide(OUT / "fig5_obstructions.png", "Step 5 - obstructions",
+        (26, slide(OUT / "fig5_obstructions.png", "Step 5 - obstructions",
                    f"Cues: height above the fitted plane, pixels no plane explains, brightness relative to the surrounding face. "
                    f"{n['obs']} objects classified (dormers, glass lantern, roof window, tree overhang) with a 0.4 m keep-out.", "5 / 8")),
-        (35, slide(OUT / "fig6_reconstruction.png", "Step 6 - 3D reconstruction",
+        (30, slide(OUT / "fig6_reconstruction.png", "Step 6 - 3D reconstruction",
                    f"Ridges / hips / valleys = analytic plane-plane intersections clipped to the shared border; mean height mismatch between "
                    f"adjacent planes {n['dz']:.3f} m. Mesh exported as OBJ/PLY; interactive viewer outputs/roof_3d.html.", "6 / 8")),
     ]
@@ -104,7 +104,7 @@ def main():
     if shot.exists():
         scenes.append((15, slide(shot, "Interactive 3D viewer (plotly)", "Faces, edges, obstructions, panels and a sample of measured DSM points.", "6 / 8")))
     scenes += [
-        (45, slide(OUT / "fig7_panels.png", "Step 7 - panel placement",
+        (38, slide(OUT / "fig7_panels.png", "Step 7 - panel placement",
                    f"Each face is unfolded into its roof plane so setbacks (0.4 m) and module sizes (1.722 x 1.134 m) are true distances; "
                    f"usable = face - setback - keep-outs; grid search over row/column phases and both orientations. "
                    f"{n['panels']} modules = {n['kwp']:.1f} kWp. Validator: 0 overlaps, 0 setback/clearance violations, exact 3D size.", "7 / 8")),

@@ -6,3 +6,4 @@ outputs/cache/
 # input data provided by the assessor (not redistributed)
 *.tif
 Technical Assessment.pdf
+outputs/demo_video.mp4

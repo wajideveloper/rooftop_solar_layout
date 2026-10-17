@@ -3,3 +3,6 @@ __pycache__/
 *.pyc
 outputs/cache/
 .claude/
+# input data provided by the assessor (not redistributed)
+*.tif
+Technical Assessment.pdf

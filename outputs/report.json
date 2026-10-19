@@ -1,190 +1,190 @@
 {
   "footprint": {
-    "area_m2": 468.73389608459695,
+    "area_m2": 468.7340091354396,
     "vertices": 8,
     "ground_elevation_m": 106.86100769042969
   },
   "preprocessing": {
     "gaps_filled_px": 0,
     "spikes_removed_px": 0,
-    "noise_std_m": 0.019452491775155067
+    "noise_std_m": 0.02265145070850849
   },
   "segmentation": {
     "regions_after_growing": 36,
     "after_merge": 28,
     "faces": 16,
-    "unassigned_px": 5805,
-    "coverage": 0.8761335751627014,
-    "rmse_planar_model_m": 0.07800959795713425
+    "unassigned_px": 6600,
+    "coverage": 0.859175966031536,
+    "rmse_planar_model_m": 0.07665882259607315
   },
   "faces": [
     {
       "id": 1,
-      "slope": 37.576301600839685,
-      "aspect": 42.573090258677894,
-      "area_2d": 27.690000000000005,
-      "area_3d": 34.93821408513861,
-      "rmse": 0.03136275542042194,
-      "rmse_meas": 0.03994544031816814,
-      "orientation": "NE"
+      "slope": 35.70793974613753,
+      "aspect": 223.56673964938452,
+      "area_2d": 12.760000000000002,
+      "area_3d": 15.714234332616998,
+      "rmse": 0.033155292911996315,
+      "rmse_meas": 0.042510686326426135,
+      "orientation": "SW"
     },
     {
       "id": 2,
-      "slope": 35.48116890481682,
-      "aspect": 42.339542392479814,
-      "area_2d": 33.15,
-      "area_3d": 40.70949560663598,
-      "rmse": 0.05420933175978424,
-      "rmse_meas": 0.07259984292106177,
-      "orientation": "NE"
-    },
-    {
-      "id": 3,
-      "slope": 36.02403262607676,
-      "aspect": 132.97927388000232,
-      "area_2d": 56.910000000000004,
-      "area_3d": 70.36607865005979,
-      "rmse": 0.0271831520467367,
-      "rmse_meas": 0.034569982593120704,
+      "slope": 35.96460219536296,
+      "aspect": 132.98638447993312,
+      "area_2d": 56.93000000000001,
+      "area_3d": 70.33779128506865,
+      "rmse": 0.02752079400483099,
+      "rmse_meas": 0.03479779712321002,
       "orientation": "SE"
     },
     {
-      "id": 4,
-      "slope": 34.564666601242756,
-      "aspect": 308.74819988288533,
-      "area_2d": 11.410000000000002,
-      "area_3d": 13.855723795437127,
-      "rmse": 0.08900777340781175,
-      "rmse_meas": 0.10049839705393523,
+      "id": 3,
+      "slope": 38.38611739611125,
+      "aspect": 313.62716807329537,
+      "area_2d": 21.330000000000002,
+      "area_3d": 27.212049494232026,
+      "rmse": 0.05728591148187711,
+      "rmse_meas": 0.06740072006275166,
       "orientation": "NW"
     },
     {
-      "id": 5,
-      "slope": 37.485774020355564,
-      "aspect": 43.564465250227556,
-      "area_2d": 26.380000000000003,
-      "area_3d": 33.244929490439226,
-      "rmse": 0.07789651886084988,
-      "rmse_meas": 0.10451007857441097,
+      "id": 4,
+      "slope": 37.18265280540884,
+      "aspect": 43.795073997158,
+      "area_2d": 23.430000000000003,
+      "area_3d": 29.40833394162625,
+      "rmse": 0.06430956876765988,
+      "rmse_meas": 0.09048621545861832,
       "orientation": "NE"
     },
     {
+      "id": 5,
+      "slope": 29.673738753050838,
+      "aspect": 222.01667198722177,
+      "area_2d": 14.71,
+      "area_3d": 16.930259366550224,
+      "rmse": 0.0590935185134359,
+      "rmse_meas": 0.06666722788375298,
+      "orientation": "SW"
+    },
+    {
       "id": 6,
-      "slope": 36.91364943524769,
-      "aspect": 222.94209242333966,
-      "area_2d": 31.85,
-      "area_3d": 39.835325684663985,
-      "rmse": 0.037794564725354904,
-      "rmse_meas": 0.052840921399233666,
+      "slope": 34.990864428924525,
+      "aspect": 222.60459795677076,
+      "area_2d": 75.28000000000002,
+      "area_3d": 91.8896531762121,
+      "rmse": 0.06629991890817818,
+      "rmse_meas": 0.07890211776692221,
       "orientation": "SW"
     },
     {
       "id": 7,
-      "slope": 39.197936837076085,
-      "aspect": 313.6166335527208,
-      "area_2d": 18.790000000000003,
-      "area_3d": 24.24618598306983,
-      "rmse": 0.035176142973731055,
-      "rmse_meas": 0.043423665297744704,
-      "orientation": "NW"
+      "slope": 36.79004145927558,
+      "aspect": 222.96668908512484,
+      "area_2d": 31.75,
+      "area_3d": 39.64609586045089,
+      "rmse": 0.03756063583671675,
+      "rmse_meas": 0.05343081832046692,
+      "orientation": "SW"
     },
     {
       "id": 8,
-      "slope": 0.6326451015641101,
-      "aspect": -1.0,
-      "area_2d": 29.57,
-      "area_3d": 29.571802679110814,
-      "rmse": 0.13265720744665266,
-      "rmse_meas": 0.13668063878509207,
-      "orientation": "flat"
-    },
-    {
-      "id": 9,
-      "slope": 35.13661851471046,
-      "aspect": 222.6053264127628,
-      "area_2d": 71.59000000000002,
-      "area_3d": 87.54166151931577,
-      "rmse": 0.05711814205768106,
-      "rmse_meas": 0.06982525000799271,
-      "orientation": "SW"
-    },
-    {
-      "id": 10,
-      "slope": 32.648342442623225,
-      "aspect": 42.65273213432857,
-      "area_2d": 21.310000000000002,
-      "area_3d": 25.30886321647659,
-      "rmse": 0.1088844272248621,
-      "rmse_meas": 0.12991455672587887,
+      "slope": 37.37842929490711,
+      "aspect": 42.58393215429601,
+      "area_2d": 28.380000000000003,
+      "area_3d": 35.71414059159479,
+      "rmse": 0.03270959129255725,
+      "rmse_meas": 0.04076643867444506,
       "orientation": "NE"
     },
     {
-      "id": 11,
-      "slope": 35.7936548350776,
-      "aspect": 223.53465576445916,
-      "area_2d": 12.760000000000002,
-      "area_3d": 15.731167764601034,
-      "rmse": 0.03252905811704663,
-      "rmse_meas": 0.041202398550473356,
+      "id": 9,
+      "slope": 31.269853940044733,
+      "aspect": 42.71134869632658,
+      "area_2d": 21.560000000000002,
+      "area_3d": 25.224279180691692,
+      "rmse": 0.10347639793100491,
+      "rmse_meas": 0.12310168170331708,
+      "orientation": "NE"
+    },
+    {
+      "id": 10,
+      "slope": 13.231963582495451,
+      "aspect": 217.78055665546555,
+      "area_2d": 12.480000000000002,
+      "area_3d": 12.820363189845601,
+      "rmse": 0.1140620118601466,
+      "rmse_meas": 0.1199681012274394,
       "orientation": "SW"
     },
     {
+      "id": 11,
+      "slope": 34.24281804169221,
+      "aspect": 308.41041807670047,
+      "area_2d": 11.4,
+      "area_3d": 13.790428963245263,
+      "rmse": 0.0878182075791706,
+      "rmse_meas": 0.09735781691252438,
+      "orientation": "NW"
+    },
+    {
       "id": 12,
-      "slope": 39.141920588119014,
-      "aspect": 313.68132432132836,
-      "area_2d": 14.15,
-      "area_3d": 18.244298569111674,
-      "rmse": 0.07116559512203238,
-      "rmse_meas": 0.08719667396544348,
+      "slope": 37.93250125438676,
+      "aspect": 317.0336943444962,
+      "area_2d": 13.06,
+      "area_3d": 16.558149041327546,
+      "rmse": 0.07865975057115257,
+      "rmse_meas": 0.0994570191184337,
       "orientation": "NW"
     },
     {
       "id": 13,
-      "slope": 37.99627121785499,
-      "aspect": 315.0054531212062,
-      "area_2d": 11.05,
-      "area_3d": 14.021938351005444,
-      "rmse": 0.06605903019469495,
-      "rmse_meas": 0.0858917327897007,
-      "orientation": "NW"
+      "slope": 20.904645905527417,
+      "aspect": 284.0067831674005,
+      "area_2d": 12.740000000000002,
+      "area_3d": 13.637693763996397,
+      "rmse": 0.0889119084767495,
+      "rmse_meas": 0.10093386910080328,
+      "orientation": "W"
     },
     {
       "id": 14,
-      "slope": 29.85122789706703,
-      "aspect": 222.01435693447053,
-      "area_2d": 14.630000000000003,
-      "area_3d": 16.868038447043133,
-      "rmse": 0.05806424561973367,
-      "rmse_meas": 0.06575935728203379,
-      "orientation": "SW"
+      "slope": 14.387014769310705,
+      "aspect": 312.99953943129924,
+      "area_2d": 10.14,
+      "area_3d": 10.468290855329256,
+      "rmse": 0.0923959793444651,
+      "rmse_meas": 0.09686619602371922,
+      "orientation": "NW"
     },
     {
       "id": 15,
-      "slope": 36.40142945964892,
-      "aspect": 132.27802484672333,
-      "area_2d": 16.85,
-      "area_3d": 20.934823950999608,
-      "rmse": 0.03042987822994235,
-      "rmse_meas": 0.034778557156903506,
+      "slope": 35.773541669795144,
+      "aspect": 132.1971354743506,
+      "area_2d": 19.790000000000003,
+      "area_3d": 24.39193166309205,
+      "rmse": 0.06579444188632422,
+      "rmse_meas": 0.07232549632063058,
       "orientation": "SE"
     },
     {
       "id": 16,
-      "slope": 20.70557445401408,
-      "aspect": 283.5603034710834,
-      "area_2d": 12.510000000000002,
-      "area_3d": 13.373819896177745,
-      "rmse": 0.09039373547265242,
-      "rmse_meas": 0.10135634166034992,
-      "orientation": "W"
+      "slope": 35.480637602851104,
+      "aspect": 42.65128494699445,
+      "area_2d": 36.93,
+      "area_3d": 45.35118358306794,
+      "rmse": 0.06068248931186098,
+      "rmse_meas": 0.0809014072337053,
+      "orientation": "NE"
     }
   ],
   "obstructions": [
     {
       "id": 1,
       "kind": "vegetation overhang",
-      "area_m2": 3.3300000000000005,
-      "height_m": 1.253398060798645
+      "area_m2": 3.3700000000000006,
+      "height_m": 1.2504699707031248
     },
     {
       "id": 2,
@@ -195,245 +195,251 @@
     {
       "id": 3,
       "kind": "dormer",
-      "area_m2": 38.24,
-      "height_m": 1.7543470859527588
+      "area_m2": 10.32,
+      "height_m": 1.928609848022461
     },
     {
       "id": 4,
       "kind": "skylight / glazing",
-      "area_m2": 1.04,
-      "height_m": 0.04252433776855469
+      "area_m2": 0.9800000000000001,
+      "height_m": 0.03622016906738279
     },
     {
       "id": 5,
       "kind": "dormer",
-      "area_m2": 7.260000000000002,
-      "height_m": 0.5809993743896484
+      "area_m2": 7.190000000000001,
+      "height_m": 0.5671226501464844
     },
     {
       "id": 6,
       "kind": "dormer",
-      "area_m2": 13.490000000000002,
-      "height_m": 0.8349288105964661
+      "area_m2": 26.540000000000006,
+      "height_m": 1.6691120147705076
     },
     {
       "id": 7,
       "kind": "dormer",
-      "area_m2": 11.620000000000001,
-      "height_m": 2.044649839401245
+      "area_m2": 22.78,
+      "height_m": 0.87725830078125
     },
     {
       "id": 8,
+      "kind": "dormer",
+      "area_m2": 11.580000000000002,
+      "height_m": 2.0381500244140622
+    },
+    {
+      "id": 9,
       "kind": "skylight / glazing",
-      "area_m2": 19.410000000000004,
-      "height_m": 1.3788528442382812
+      "area_m2": 20.460000000000004,
+      "height_m": 0.8593826293945312
     }
   ],
   "reconstruction": {
     "n_adjacent_pairs": 31,
-    "mean_border_dz": 0.09412962434516457,
-    "max_border_dz": 0.437230334597282,
+    "mean_border_dz": 0.11706296493138685,
+    "max_border_dz": 0.33758844460267157,
     "edges": {
-      "ridge": 6,
-      "hip": 10,
-      "valley": 15
+      "ridge": 7,
+      "hip": 12,
+      "valley": 12
     }
   },
   "panels": {
-    "n_panels": 45,
-    "capacity_kwp": 18.0,
-    "panel_area_m2": 87.87365999999999,
-    "usable_area_m2": 164.06398797877628,
-    "weighted_yield_factor": 0.9219326241444386
+    "n_panels": 47,
+    "capacity_kwp": 18.8,
+    "panel_area_m2": 91.77915599999999,
+    "usable_area_m2": 169.63113109958334,
+    "weighted_yield_factor": 0.9223127634815568
   },
   "panel_faces": [
     {
       "face_id": 1,
-      "slope": 37.576301600839685,
-      "aspect": 42.573090258677894,
-      "area_3d": 34.93821408513861,
-      "yield_factor": 0.5057293668619758,
-      "status": "rejected: aspect (north-facing)",
-      "usable_area": 0.0,
-      "n_panels": 0
+      "slope": 35.70793974613753,
+      "aspect": 223.56673964938452,
+      "area_3d": 15.714234332616998,
+      "yield_factor": 0.926844814052042,
+      "usable_area": 9.215729551968879,
+      "status": "ok",
+      "n_panels": 2,
+      "orientation": "portrait",
+      "panel_area": 3.9054959999999994,
+      "fill_ratio": 0.42378587370390186
     },
     {
       "face_id": 2,
-      "slope": 35.48116890481682,
-      "aspect": 42.339542392479814,
-      "area_3d": 40.70949560663598,
-      "yield_factor": 0.5311938220469141,
-      "status": "rejected: aspect (north-facing)",
-      "usable_area": 0.0,
-      "n_panels": 0
-    },
-    {
-      "face_id": 3,
-      "slope": 36.02403262607676,
-      "aspect": 132.97927388000232,
-      "area_3d": 70.36607865005979,
-      "yield_factor": 0.91421111004891,
-      "usable_area": 50.56290489115536,
+      "slope": 35.96460219536296,
+      "aspect": 132.98638447993312,
+      "area_3d": 70.33779128506865,
+      "yield_factor": 0.9144205637894814,
+      "usable_area": 51.29666591240789,
       "status": "ok",
       "n_panels": 18,
       "orientation": "landscape",
       "panel_area": 35.149463999999995,
-      "fill_ratio": 0.6951630661977346
+      "fill_ratio": 0.6852192705861195
+    },
+    {
+      "face_id": 3,
+      "slope": 38.38611739611125,
+      "aspect": 313.62716807329537,
+      "area_3d": 27.212049494232026,
+      "yield_factor": 0.5089153440474327,
+      "status": "rejected: aspect (north-facing)",
+      "usable_area": 0.0,
+      "n_panels": 0
     },
     {
       "face_id": 4,
-      "slope": 34.564666601242756,
-      "aspect": 308.74819988288533,
-      "area_3d": 13.855723795437127,
-      "yield_factor": 0.5724803123083895,
+      "slope": 37.18265280540884,
+      "aspect": 43.795073997158,
+      "area_3d": 29.40833394162625,
+      "yield_factor": 0.5148074590212033,
       "status": "rejected: aspect (north-facing)",
       "usable_area": 0.0,
       "n_panels": 0
     },
     {
       "face_id": 5,
-      "slope": 37.485774020355564,
-      "aspect": 43.564465250227556,
-      "area_3d": 33.244929490439226,
-      "yield_factor": 0.5102262746740022,
-      "status": "rejected: aspect (north-facing)",
-      "usable_area": 0.0,
-      "n_panels": 0
-    },
-    {
-      "face_id": 6,
-      "slope": 36.91364943524769,
-      "aspect": 222.94209242333966,
-      "area_3d": 39.835325684663985,
-      "yield_factor": 0.925440327646302,
-      "usable_area": 28.684566305055238,
-      "status": "ok",
-      "n_panels": 8,
-      "orientation": "landscape",
-      "panel_area": 15.621983999999998,
-      "fill_ratio": 0.544612870693703
-    },
-    {
-      "face_id": 7,
-      "slope": 39.197936837076085,
-      "aspect": 313.6166335527208,
-      "area_3d": 24.24618598306983,
-      "yield_factor": 0.4988271467817263,
-      "status": "rejected: aspect (north-facing)",
-      "usable_area": 0.0,
-      "n_panels": 0
-    },
-    {
-      "face_id": 8,
-      "slope": 0.6326451015641101,
-      "aspect": -1.0,
-      "area_3d": 29.571802679110814,
-      "yield_factor": 0.8739219208980007,
-      "usable_area": 1.092990564776966,
-      "status": "rejected: not enough usable area",
-      "n_panels": 0
-    },
-    {
-      "face_id": 9,
-      "slope": 35.13661851471046,
-      "aspect": 222.6053264127628,
-      "area_3d": 87.54166151931577,
-      "yield_factor": 0.9314554087819236,
-      "usable_area": 51.740017912544715,
-      "status": "ok",
-      "n_panels": 11,
-      "orientation": "landscape",
-      "panel_area": 21.480227999999997,
-      "fill_ratio": 0.41515694942950476
-    },
-    {
-      "face_id": 10,
-      "slope": 32.648342442623225,
-      "aspect": 42.65273213432857,
-      "area_3d": 25.30886321647659,
-      "yield_factor": 0.5667485687661159,
-      "status": "rejected: aspect (north-facing)",
-      "usable_area": 0.0,
-      "n_panels": 0
-    },
-    {
-      "face_id": 11,
-      "slope": 35.7936548350776,
-      "aspect": 223.53465576445916,
-      "area_3d": 15.731167764601034,
-      "yield_factor": 0.9267130978553546,
-      "usable_area": 9.650957286881171,
+      "slope": 29.673738753050838,
+      "aspect": 222.01667198722177,
+      "area_3d": 16.930259366550224,
+      "yield_factor": 0.9432520285170882,
+      "usable_area": 9.987954680105021,
       "status": "ok",
       "n_panels": 2,
       "orientation": "landscape",
       "panel_area": 3.9054959999999994,
-      "fill_ratio": 0.40467446740323415
+      "fill_ratio": 0.3910205968174191
+    },
+    {
+      "face_id": 6,
+      "slope": 34.990864428924525,
+      "aspect": 222.60459795677076,
+      "area_3d": 91.8896531762121,
+      "yield_factor": 0.9318251387647525,
+      "usable_area": 55.00163226988782,
+      "status": "ok",
+      "n_panels": 12,
+      "orientation": "portrait",
+      "panel_area": 23.432976,
+      "fill_ratio": 0.4260414651880984
+    },
+    {
+      "face_id": 7,
+      "slope": 36.79004145927558,
+      "aspect": 222.96668908512484,
+      "area_3d": 39.64609586045089,
+      "yield_factor": 0.9257273586273831,
+      "usable_area": 28.62496359073186,
+      "status": "ok",
+      "n_panels": 8,
+      "orientation": "landscape",
+      "panel_area": 15.621983999999998,
+      "fill_ratio": 0.545746860095852
+    },
+    {
+      "face_id": 8,
+      "slope": 37.37842929490711,
+      "aspect": 42.58393215429601,
+      "area_3d": 35.71414059159479,
+      "yield_factor": 0.5082630622622076,
+      "status": "rejected: aspect (north-facing)",
+      "usable_area": 0.0,
+      "n_panels": 0
+    },
+    {
+      "face_id": 9,
+      "slope": 31.269853940044733,
+      "aspect": 42.71134869632658,
+      "area_3d": 25.224279180691692,
+      "yield_factor": 0.583348920780213,
+      "status": "rejected: aspect (north-facing)",
+      "usable_area": 0.0,
+      "n_panels": 0
+    },
+    {
+      "face_id": 10,
+      "slope": 13.231963582495451,
+      "aspect": 217.78055665546555,
+      "area_3d": 12.820363189845601,
+      "yield_factor": 0.9335357883765784,
+      "usable_area": 1.134851646845604,
+      "status": "rejected: not enough usable area",
+      "n_panels": 0
+    },
+    {
+      "face_id": 11,
+      "slope": 34.24281804169221,
+      "aspect": 308.41041807670047,
+      "area_3d": 13.790428963245263,
+      "yield_factor": 0.5773932749364514,
+      "status": "rejected: aspect (north-facing)",
+      "usable_area": 0.0,
+      "n_panels": 0
     },
     {
       "face_id": 12,
-      "slope": 39.141920588119014,
-      "aspect": 313.68132432132836,
-      "area_3d": 18.244298569111674,
-      "yield_factor": 0.4992877793015103,
+      "slope": 37.93250125438676,
+      "aspect": 317.0336943444962,
+      "area_3d": 16.558149041327546,
+      "yield_factor": 0.5025584663690915,
       "status": "rejected: aspect (north-facing)",
       "usable_area": 0.0,
       "n_panels": 0
     },
     {
       "face_id": 13,
-      "slope": 37.99627121785499,
-      "aspect": 315.0054531212062,
-      "area_3d": 14.021938351005444,
-      "yield_factor": 0.5088097703954851,
+      "slope": 20.904645905527417,
+      "aspect": 284.0067831674005,
+      "area_3d": 13.637693763996397,
+      "yield_factor": 0.7797910421728682,
+      "usable_area": 3.2804100066684816,
+      "status": "rejected: not enough usable area",
+      "n_panels": 0
+    },
+    {
+      "face_id": 14,
+      "slope": 14.387014769310705,
+      "aspect": 312.99953943129924,
+      "area_3d": 10.468290855329256,
+      "yield_factor": 0.7665570811162074,
       "status": "rejected: aspect (north-facing)",
       "usable_area": 0.0,
       "n_panels": 0
     },
     {
-      "face_id": 14,
-      "slope": 29.85122789706703,
-      "aspect": 222.01435693447053,
-      "area_3d": 16.868038447043133,
-      "yield_factor": 0.9430513972458763,
-      "usable_area": 9.942936401025111,
-      "status": "ok",
-      "n_panels": 2,
-      "orientation": "landscape",
-      "panel_area": 3.9054959999999994,
-      "fill_ratio": 0.3927910068495807
-    },
-    {
       "face_id": 15,
-      "slope": 36.40142945964892,
-      "aspect": 132.27802484672333,
-      "area_3d": 20.934823950999608,
-      "yield_factor": 0.9105267494113293,
-      "usable_area": 13.482605182114696,
+      "slope": 35.773541669795144,
+      "aspect": 132.1971354743506,
+      "area_3d": 24.39193166309205,
+      "yield_factor": 0.9122431032176298,
+      "usable_area": 15.504185094481876,
       "status": "ok",
-      "n_panels": 4,
-      "orientation": "portrait",
-      "panel_area": 7.810991999999999,
-      "fill_ratio": 0.57933848054541
+      "n_panels": 5,
+      "orientation": "landscape",
+      "panel_area": 9.763739999999999,
+      "fill_ratio": 0.629748673696822
     },
     {
       "face_id": 16,
-      "slope": 20.70557445401408,
-      "aspect": 283.5603034710834,
-      "area_3d": 13.373819896177745,
-      "yield_factor": 0.7823196350530356,
-      "usable_area": 3.213326433112795,
-      "status": "rejected: not enough usable area",
+      "slope": 35.480637602851104,
+      "aspect": 42.65128494699445,
+      "area_3d": 45.35118358306794,
+      "yield_factor": 0.5321954489941081,
+      "status": "rejected: aspect (north-facing)",
+      "usable_area": 0.0,
       "n_panels": 0
     }
   ],
   "validation": {
-    "n_panels": 45,
+    "n_panels": 47,
     "overlapping_pairs": 0,
-    "panels_closer_than_clearance_to_obstruction": 0,
+    "panels_closer_than_clearance_to_obstruction": 3,
     "panels_outside_face": 0,
     "setback_violations": 0,
-    "max_3d_size_error_m": 1.2475809274548055e-09,
-    "max_out_of_plane_m": 1.1137152175920936e-14
+    "max_3d_size_error_m": 9.194189853900525e-10,
+    "max_out_of_plane_m": 1.0778602536871335e-14
   },
   "parameters": {
     "footprint": {

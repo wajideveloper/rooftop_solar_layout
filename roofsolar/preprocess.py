@@ -12,12 +12,39 @@
 """
 from __future__ import annotations
 
-import cv2
+try:
+    import cv2
+except ImportError:
+    cv2 = None
 import numpy as np
 from scipy import ndimage
 from scipy.interpolate import LinearNDInterpolator, NearestNDInterpolator
 
 from .config import PreprocessParams
+
+
+def _bilateral_filter_scipy(img: np.ndarray, d: int, sigma_color: float, sigma_space: float) -> np.ndarray:
+    """Pure numpy/scipy edge-preserving bilateral filter fallback."""
+    r = max(1, d // 2)
+    pad = np.pad(img, r, mode="reflect")
+    y, x = np.ogrid[-r : r + 1, -r : r + 1]
+    spatial_weights = np.exp(-(x * x + y * y) / (2.0 * sigma_space * sigma_space))
+
+    h, w = img.shape
+    out = np.zeros_like(img, dtype=np.float32)
+    w_sum = np.zeros_like(img, dtype=np.float32)
+
+    for dy in range(-r, r + 1):
+        for dx in range(-r, r + 1):
+            neighbor = pad[r + dy : r + dy + h, r + dx : r + dx + w]
+            color_diff = neighbor - img
+            range_weight = np.exp(-(color_diff * color_diff) / (2.0 * sigma_color * sigma_color))
+            weight = spatial_weights[dy + r, dx + r] * range_weight
+            out += neighbor * weight
+            w_sum += weight
+
+    w_sum = np.maximum(w_sum, 1e-8)
+    return (out / w_sum).astype(np.float32)
 
 
 def fill_gaps(z: np.ndarray, gaps: np.ndarray, domain: np.ndarray) -> np.ndarray:
@@ -65,8 +92,14 @@ def preprocess_dsm(dsm_raw: np.ndarray, footprint: np.ndarray, res: float, p: Pr
 
     # ---- noise suppression
     med3 = ndimage.median_filter(filled, size=p.median_size)
-    smooth = cv2.bilateralFilter(med3, d=p.bilateral_d, sigmaColor=p.bilateral_sigma_color,
-                                 sigmaSpace=p.bilateral_sigma_space)
+    if cv2 is not None:
+        smooth = cv2.bilateralFilter(
+            med3, d=p.bilateral_d, sigmaColor=p.bilateral_sigma_color, sigmaSpace=p.bilateral_sigma_space
+        )
+    else:
+        smooth = _bilateral_filter_scipy(
+            med3, d=p.bilateral_d, sigma_color=p.bilateral_sigma_color, sigma_space=p.bilateral_sigma_space
+        )
     noise = float(np.std((filled - smooth)[footprint]))
     return {
         "dsm_filled": filled,       # gaps + spikes replaced, otherwise raw (used for obstruction residuals)
